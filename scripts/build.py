@@ -53,6 +53,8 @@ def main():
     command([java,'-cp',testclasses,'StopPolicyTest'])
     command([javac,'--release','8','-encoding','UTF-8','-d',testclasses,ROOT/'src/com/gexoty/picolibrary/CatalogRules.java',ROOT/'tests/CatalogRulesTest.java'])
     command([java,'-cp',testclasses,'CatalogRulesTest'])
+    command([javac,'--release','8','-encoding','UTF-8','-d',testclasses,ROOT/'src/com/gexoty/picolibrary/StopPolicy.java',ROOT/'src/com/gexoty/picolibrary/RemovalPolicy.java',ROOT/'tests/RemovalPolicyTest.java'])
+    command([java,'-cp',testclasses,'RemovalPolicyTest'])
     base=run/'base-unsigned.apk';command([java,'-jar',args.apktool,'b',decoded,'-p',run/'framework','-o',base])
     unsigned=run/'picolibrary-unsigned.apk'
     with zipfile.ZipFile(base) as source,zipfile.ZipFile(unsigned,'w') as target:

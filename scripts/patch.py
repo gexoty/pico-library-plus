@@ -42,7 +42,7 @@ def transform(decoded, variant="standalone", version_name=None, version_code=Non
         for key,value in list(el.attrib.items()):
             if value in mapping:el.set(key,mapping[value])
         if el.tag=='action' and el.get(ANDROID+'name')=='pvr.intent.action.STORE_APP':el.set(ANDROID+'name',application_id+'.OPEN_LIBRARY')
-    for name in ['android.permission.FORCE_STOP_PACKAGES','android.permission.QUERY_ALL_PACKAGES','android.permission.PACKAGE_USAGE_STATS','moe.shizuku.manager.permission.API_V23']:
+    for name in ['android.permission.REQUEST_DELETE_PACKAGES','android.permission.FORCE_STOP_PACKAGES','android.permission.QUERY_ALL_PACKAGES','android.permission.PACKAGE_USAGE_STATS','moe.shizuku.manager.permission.API_V23']:
         ET.SubElement(root,'uses-permission',{ANDROID+'name':name})
     ET.SubElement(app,'provider',{ANDROID+'name':'rikka.shizuku.ShizukuProvider',ANDROID+'authorities':application_id+'.shizuku',ANDROID+'multiprocess':'false',ANDROID+'enabled':'true',ANDROID+'exported':'true',ANDROID+'permission':'android.permission.INTERACT_ACROSS_USERS_FULL'})
     ET.SubElement(app,'meta-data',{ANDROID+'name':'moe.shizuku.client.V3_SUPPORT',ANDROID+'value':'true'})
@@ -99,6 +99,8 @@ def transform(decoded, variant="standalone", version_name=None, version_code=Non
 </vector>''',encoding='utf-8')
     # Ordinary-app permission UI route; no permission grants or security-policy changes.
     edit('com/pvr/appmanager/utils/Utils.smali',lambda s:body(s,'showAppPermission(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V',f'    invoke-static {{p0, p1, p2}}, {I}->openPermissions(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V\n    return-void',0))
+    # Installed APKs must not use the original fire-and-forget delete + fake PACKAGE_REMOVED.
+    edit('com/pvr/appmanager/utils/DialogHelper.smali',lambda s:method(s,'uninstall()V',lambda m:after_directives(m,'    invoke-static {p0}, Lcom/gexoty/picolibrary/PackageRemoval;->handle(Ljava/lang/Object;)Z\n    move-result v0\n    if-eqz v0, :gexoty_original_uninstall\n    return-void\n    :gexoty_original_uninstall')))
     # Outline-only clipping is skipped by software view captures. Clip icons in draw as well.
     edit('androidx/constraintlayout/utils/widget/ImageFilterView.smali',lambda s:body(s,'draw(Landroid/graphics/Canvas;)V',
         '    invoke-static {p0, p1}, Lcom/gexoty/picolibrary/IconMask;->begin(Landroid/view/View;Landroid/graphics/Canvas;)I\n    move-result v0\n    invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->draw(Landroid/graphics/Canvas;)V\n    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V\n    return-void'))

@@ -27,4 +27,10 @@ with zipfile.ZipFile(apk) as z:
     assert b'rikka/shizuku/ShizukuProvider' in z.read('classes2.dex')
     assert b'com/gexoty/picolibrary/StopUserService' in z.read('classes2.dex')
     assert 'classes.dex' in z.namelist()
+
+assert 'android.permission.REQUEST_DELETE_PACKAGES' in permissions
+assert 'PackageRemoval;->handle(Ljava/lang/Object;)Z' in (decoded/'smali/com/pvr/appmanager/utils/DialogHelper.smali').read_text(encoding='utf-8')
+with zipfile.ZipFile(apk) as z:
+    assert b'com/gexoty/picolibrary/PackageRemoval' in z.read('classes2.dex')
+
 print('Manifest, authority isolation, permission and extension DEX checks: passed')
