@@ -1,0 +1,12 @@
+{
+  "PicoLibrary-v1.0.0.apk": {
+    "different_zip_entries": [],
+    "same_payload": true,
+    "sha256": "c7ba4054ab3b5bbcc1680dc36a62e73ffaab5476c653d07d2abe55ac384b3dad"
+  },
+  "PicoLibrary-System-v1.0.0.apk": {
+    "different_zip_entries": [],
+    "same_payload": true,
+    "sha256": "474ee9eb62d5b09cc5d968d696c7da2bc681c678ce8040685aa63a7f2d04de33"
+  }
+}

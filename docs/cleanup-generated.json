@@ -1,0 +1,32 @@
+[
+  {
+    "path": "dist",
+    "bytes": 53146539,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  },
+  {
+    "path": "dist-debug",
+    "bytes": 53144573,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  },
+  {
+    "path": "build",
+    "bytes": 890256723,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  },
+  {
+    "path": ".tools",
+    "bytes": 15478013,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  },
+  {
+    "path": "scripts/__pycache__",
+    "bytes": 60796,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  },
+  {
+    "path": "tests/__pycache__",
+    "bytes": 3094,
+    "reason": "Generated during current validation; final artifacts retained in dist-final, build logs preserved"
+  }
+]

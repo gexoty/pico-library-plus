@@ -1,0 +1,36 @@
+[
+  {
+    "from": "validation/picolibrary-aligned-unsigned.apk",
+    "to": ".local-evidence/validation-history/picolibrary-aligned-unsigned.apk",
+    "bytes": 20901624,
+    "sha256": "a0ddbf4b65107fbaf71f91c48ad82361a3ca5869980f3aace9091d6e65ab30a6"
+  },
+  {
+    "from": "validation/picolibrary-debug-before-feature-update.apk",
+    "to": ".local-evidence/validation-history/picolibrary-debug-before-feature-update.apk",
+    "bytes": 21022663,
+    "sha256": "ebe9c8beb6fc4366a0cfc4ce0ba3f04b4c4eb30ce66a9b42134b3c8fa8707838"
+  },
+  {
+    "from": "validation/picolibrary-debug-before-startup-fix.apk",
+    "to": ".local-evidence/validation-history/picolibrary-debug-before-startup-fix.apk",
+    "bytes": 21022663,
+    "sha256": "303450bd7adaf201176a32263fdaf7f16a6780b197c3d537fa06e230a516b3ad"
+  },
+  {
+    "from": "validation/picolibrary-debug.apk",
+    "to": ".local-evidence/validation-history/picolibrary-debug.apk",
+    "bytes": 21064029,
+    "sha256": "ccd379f4c1d7206a2b6b501bedad8b140bcc7b9c94b400b32f3de550396d353d"
+  },
+  {
+    "from": "build/store-inspection",
+    "to": ".local-evidence/store-inspection",
+    "bytes": 567976
+  },
+  {
+    "from": "FILE-MANIFEST.json",
+    "to": ".local-evidence/FILE-MANIFEST-original.json",
+    "reason": "Historical handoff inventory; no longer matches cleaned tree"
+  }
+]

@@ -1,0 +1,908 @@
+[
+  {
+    "evidence_id": "ev_b4c9d7311e624c9e0ee6cfb37809b1790db41eb1a963f76fac0425728df5653f",
+    "subject": {
+      "name": "Библиотека.ver.2.9.5.build.200905100.apk",
+      "digest": {
+        "sha256": "e330afb8a59878756163f7cd3a4588f61e7eb338874563b5eebb9bdd9ce1364f"
+      },
+      "local_path": "D:\\ChatGPT_Codex\\ReverseEngineering\\Pico4\\Библиотека.ver.2.9.5.build.200905100.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "trace_android_references",
+    "parameters": {
+      "path": "D:/ChatGPT_Codex/ReverseEngineering/Pico4/Библиотека.ver.2.9.5.build.200905100.apk",
+      "class_name": "com.pvr.appmanager.Filter",
+      "method_name": "judgeSourceType"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-92b230af1eeca2ca388b578c1c4e28b3\\target.apk",
+        "class_count": 3402,
+        "resource_count": 1414,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "load_apk",
+          "input": {
+            "path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-92b230af1eeca2ca388b578c1c4e28b3\\target.apk",
+            "threads": 1,
+            "resources": "full"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\Gexoty\\\\AppData\\\\Local\\\\Temp\\\\rea-android-92b230af1eeca2ca388b578c1c4e28b3\\\\target.apk\",\"class_count\":3402,\"raw_class_count\":3402,\"resource_count\":1414,\"load_duration_ms\":3590,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.pvr.appmanager.Filter"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"fields\":[{\"name\":\"mCurrAdapter\",\"def_pos\":0,\"type\":\"com.pvr.appmanager.z.g0\"},{\"name\":\"mCurrSortType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"mFilterList$delegate\",\"def_pos\":0,\"type\":\"d.e\"},{\"name\":\"mRecentMap$delegate\",\"def_pos\":0,\"type\":\"d.e\"},{\"name\":\"mSelectedFilter\",\"def_pos\":0,\"type\":\"com.pvr.appmanager.Filter$a\"},{\"name\":\"mStoreSourceDataMap$delegate\",\"def_pos\":0,\"type\":\"d.e\"}],\"field_count\":6,\"full_name\":\"com.pvr.appmanager.Filter\",\"name\":\"Filter\",\"inner_classes\":[\"com.pvr.appmanager.Filter.a\",\"com.pvr.appmanager.Filter.b\",\"com.pvr.appmanager.Filter.c\",\"com.pvr.appmanager.Filter.d\",\"com.pvr.appmanager.Filter.e\",\"com.pvr.appmanager.Filter.f\",\"com.pvr.appmanager.Filter.g\",\"com.pvr.appmanager.Filter.h\"],\"inner_class_count\":8,\"method_count\":32,\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Lcom/pvr/appmanager/z/g0;\",\"is_constructor\":false,\"name\":\"access$getMCurrAdapter$p\",\"def_pos\":0,\"signature\":\"access$getMCurrAdapter$p(com.pvr.appmanager.Filter): com.pvr.appmanager.z.g0\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"access$getMCurrSortType$p\",\"def_pos\":0,\"signature\":\"access$getMCurrSortType$p(com.pvr.appmanager.Filter): java.lang.String\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"access$getMRecentMap\",\"def_pos\":0,\"signature\":\"access$getMRecentMap(com.pvr.appmanager.Filter): java.util.Map\"},{\"dex_descriptor\":\"(Ljava/util/Map;)V\",\"is_constructor\":false,\"name\":\"addFavorFilter\",\"def_pos\":0,\"signature\":\"addFavorFilter(java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.dao.AppInfo\\u003e): void\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/z/g0;Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"appendData\",\"def_pos\":0,\"signature\":\"appendData(com.pvr.appmanager.z.g0, com.pvr.appmanager.entity.AppData): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/z/g0;Ljava/util/List;ZLjava/lang/String;)V\",\"is_constructor\":false,\"name\":\"filterData\",\"def_pos\":0,\"signature\":\"filterData(java.lang.String, com.pvr.appmanager.z.g0, java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e, boolean, java.lang.String): void\"},{\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/ArrayList;\",\"is_constructor\":false,\"name\":\"getGameApps\",\"def_pos\":0,\"signature\":\"getGameApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"dex_descriptor\":\"()Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getMFilterList\",\"def_pos\":0,\"signature\":\"getMFilterList(): java.util.List\\u003ccom.pvr.appmanager.Filter$a\\u003e\"},{\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getMRecentMap\",\"def_pos\":0,\"signature\":\"getMRecentMap(): java.util.Map\\u003cjava.lang.String, java.lang.Long\\u003e\"},{\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getMStoreSourceDataMap\",\"def_pos\":0,\"signature\":\"getMStoreSourceDataMap(): java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.entity.StoreAppInfo\\u003e\"},{\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getSortType\",\"def_pos\":0,\"signature\":\"getSortType(): java.lang.String\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/pvr/appmanager/Filter$a;\",\"is_constructor\":false,\"name\":\"getTargetFilter\",\"def_pos\":0,\"signature\":\"getTargetFilter(java.lang.String): com.pvr.appmanager.Filter$a\"},{\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getUnKnownApps\",\"def_pos\":0,\"signature\":\"getUnKnownApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e\"},{\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getUpdateApps\",\"def_pos\":0,\"signature\":\"getUpdateApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initByDeviceType\",\"def_pos\":0,\"signature\":\"initByDeviceType(): void\"},{\"dex_descriptor\":\"(Ljava/util/List;)V\",\"is_constructor\":false,\"name\":\"initPkgUsageStatsData\",\"def_pos\":0,\"signature\":\"initPkgUsageStatsData(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initSourceDataFromStore\",\"def_pos\":0,\"signature\":\"initSourceDataFromStore(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initToB\",\"def_pos\":0,\"signature\":\"initToB(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initToC\",\"def_pos\":0,\"signature\":\"initToC(): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPicoSDK\",\"def_pos\":0,\"signature\":\"isPicoSDK(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedApp\",\"def_pos\":0,\"signature\":\"isPreloadedApp(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedGame\",\"def_pos\":0,\"signature\":\"isPreloadedGame(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedPUI\",\"def_pos\":0,\"signature\":\"isPreloadedPUI(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/entity/AppData;)Z\",\"is_constructor\":false,\"name\":\"isStoreSource\",\"def_pos\":0,\"signature\":\"isStoreSource(com.pvr.appmanager.entity.AppData): boolean\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"judgeSourceType\",\"def_pos\":0,\"signature\":\"judgeSourceType(com.pvr.appmanager.entity.AppData): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"refreshPkgUsageStatsDat4Start\",\"def_pos\":0,\"signature\":\"refreshPkgUsageStatsDat4Start(): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"refreshStoreData\",\"def_pos\":0,\"signature\":\"refreshStoreData(java.lang.String, com.pvr.appmanager.entity.AppData): void\"},{\"dex_descriptor\":\"(Ljava/util/Map;)V\",\"is_constructor\":false,\"name\":\"refreshStoreMap\",\"def_pos\":0,\"signature\":\"refreshStoreMap(java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.entity.StoreAppInfo\\u003e): void\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/z/g0;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"removeData\",\"def_pos\":0,\"signature\":\"removeData(com.pvr.appmanager.z.g0, java.lang.String): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/z/g0;)V\",\"is_constructor\":false,\"name\":\"sortData\",\"def_pos\":0,\"signature\":\"sortData(java.lang.String, com.pvr.appmanager.z.g0): void\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/b0/b/a;Z)V\",\"is_constructor\":false,\"name\":\"updateWebAppUsageStatsData\",\"def_pos\":0,\"signature\":\"updateWebAppUsageStatsData(com.pvr.appmanager.b0.b.a, boolean): void\"}]}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_xrefs_to_method",
+          "input": {
+            "class_name": "com.pvr.appmanager.Filter",
+            "method_name": "judgeSourceType",
+            "overload_index": 0,
+            "limit": 2147483647,
+            "resolve_line": false
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"count\":4,\"items\":[{\"kind\":\"method\",\"name\":\"addAppToList\",\"full_name\":\"com.pvr.appmanager.AllAppActivity.addAppToList\",\"containing_class\":\"com.pvr.appmanager.AllAppActivity\",\"top_class\":\"com.pvr.appmanager.AllAppActivity\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":246,\"dex_method_index\":42736,\"source_raw_method_id\":\"com.pvr.appmanager.AllAppActivity.addAppToList(Ljava/lang/String;)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL\"}],\"direct_invokes_exhaustive\":true},{\"kind\":\"method\",\"name\":\"a\",\"full_name\":\"com.pvr.appmanager.AllAppActivity.j.b.a\",\"containing_class\":\"com.pvr.appmanager.AllAppActivity.j.b\",\"top_class\":\"com.pvr.appmanager.AllAppActivity\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":107,\"dex_method_index\":42736,\"source_raw_method_id\":\"com.pvr.appmanager.AllAppActivity$j$b.a(Lcom/pvr/appmanager/b0/b/a;Ljava/util/HashMap;)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL\"}],\"direct_invokes_exhaustive\":true},{\"kind\":\"method\",\"name\":\"appendData\",\"full_name\":\"com.pvr.appmanager.Filter.appendData\",\"containing_class\":\"com.pvr.appmanager.Filter\",\"top_class\":\"com.pvr.appmanager.Filter\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":10,\"dex_method_index\":42736,\"source_raw_method_id\":\"com.pvr.appmanager.Filter.appendData(Lcom/pvr/appmanager/z/g0;Lcom/pvr/appmanager/entity/AppData;)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL\"}],\"direct_invokes_exhaustive\":true},{\"kind\":\"method\",\"name\":\"getGameAppList\",\"full_name\":\"com.pvr.appmanager.utils.Utils.getGameAppList\",\"containing_class\":\"com.pvr.appmanager.utils.Utils\",\"top_class\":\"com.pvr.appmanager.utils.Utils\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":145,\"dex_method_index\":42736,\"source_raw_method_id\":\"com.pvr.appmanager.utils.Utils.getGameAppList()Ljava/util/ArrayList;\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL\"}],\"direct_invokes_exhaustive\":true}],\"total\":4,\"resolve_line\":false,\"target\":\"com.pvr.appmanager.Filter.judgeSourceType\",\"overload_index\":0,\"reported_signature\":\"judgeSourceType(com.pvr.appmanager.entity.AppData): void\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "class_name": "com.pvr.appmanager.Filter",
+      "method_name": "judgeSourceType",
+      "overload_index": 0,
+      "reported_signature": "judgeSourceType(com.pvr.appmanager.entity.AppData): void",
+      "dex_descriptor": "(Lcom/pvr/appmanager/entity/AppData;)V",
+      "total": 4,
+      "references": [
+        {
+          "kind": "method",
+          "name": "addAppToList",
+          "reported_full_name": "com.pvr.appmanager.AllAppActivity.addAppToList",
+          "containing_class": "com.pvr.appmanager.AllAppActivity",
+          "top_class": "com.pvr.appmanager.AllAppActivity",
+          "source_line": null,
+          "dex_offset": null,
+          "direct_invokes_exhaustive": true,
+          "direct_invokes": [
+            {
+              "dex_entry": "classes.dex",
+              "source_raw_method_id": "com.pvr.appmanager.AllAppActivity.addAppToList(Ljava/lang/String;)V",
+              "dex_code_unit_offset": 246,
+              "dex_method_index": 42736,
+              "opcode": "INVOKE_VIRTUAL"
+            }
+          ]
+        },
+        {
+          "kind": "method",
+          "name": "a",
+          "reported_full_name": "com.pvr.appmanager.AllAppActivity.j.b.a",
+          "containing_class": "com.pvr.appmanager.AllAppActivity.j.b",
+          "top_class": "com.pvr.appmanager.AllAppActivity",
+          "source_line": null,
+          "dex_offset": null,
+          "direct_invokes_exhaustive": true,
+          "direct_invokes": [
+            {
+              "dex_entry": "classes.dex",
+              "source_raw_method_id": "com.pvr.appmanager.AllAppActivity$j$b.a(Lcom/pvr/appmanager/b0/b/a;Ljava/util/HashMap;)V",
+              "dex_code_unit_offset": 107,
+              "dex_method_index": 42736,
+              "opcode": "INVOKE_VIRTUAL"
+            }
+          ]
+        },
+        {
+          "kind": "method",
+          "name": "appendData",
+          "reported_full_name": "com.pvr.appmanager.Filter.appendData",
+          "containing_class": "com.pvr.appmanager.Filter",
+          "top_class": "com.pvr.appmanager.Filter",
+          "source_line": null,
+          "dex_offset": null,
+          "direct_invokes_exhaustive": true,
+          "direct_invokes": [
+            {
+              "dex_entry": "classes.dex",
+              "source_raw_method_id": "com.pvr.appmanager.Filter.appendData(Lcom/pvr/appmanager/z/g0;Lcom/pvr/appmanager/entity/AppData;)V",
+              "dex_code_unit_offset": 10,
+              "dex_method_index": 42736,
+              "opcode": "INVOKE_VIRTUAL"
+            }
+          ]
+        },
+        {
+          "kind": "method",
+          "name": "getGameAppList",
+          "reported_full_name": "com.pvr.appmanager.utils.Utils.getGameAppList",
+          "containing_class": "com.pvr.appmanager.utils.Utils",
+          "top_class": "com.pvr.appmanager.utils.Utils",
+          "source_line": null,
+          "dex_offset": null,
+          "direct_invokes_exhaustive": true,
+          "direct_invokes": [
+            {
+              "dex_entry": "classes.dex",
+              "source_raw_method_id": "com.pvr.appmanager.utils.Utils.getGameAppList()Ljava/util/ArrayList;",
+              "dex_code_unit_offset": 145,
+              "dex_method_index": 42736,
+              "opcode": "INVOKE_VIRTUAL"
+            }
+          ]
+        }
+      ],
+      "coverage": "complete",
+      "reference_unit": "using_node"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_ae1a5feda1991334c21cfb0c21212db5d8f36184d6040a0f623bd1d6782c7590",
+    "subject": {
+      "name": "Библиотека.ver.2.9.5.build.200905100.apk",
+      "digest": {
+        "sha256": "e330afb8a59878756163f7cd3a4588f61e7eb338874563b5eebb9bdd9ce1364f"
+      },
+      "local_path": "D:\\ChatGPT_Codex\\ReverseEngineering\\Pico4\\Библиотека.ver.2.9.5.build.200905100.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "trace_android_references",
+    "parameters": {
+      "path": "D:/ChatGPT_Codex/ReverseEngineering/Pico4/Библиотека.ver.2.9.5.build.200905100.apk",
+      "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+      "method_name": "getAllMenus"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-92b230af1eeca2ca388b578c1c4e28b3\\target.apk",
+        "class_count": 3402,
+        "resource_count": 1414,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"fields\":[{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper$Companion\"},{\"name\":\"TAG\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"mDismissTime\",\"def_pos\":0,\"type\":\"long\"}],\"field_count\":3,\"full_name\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper\",\"name\":\"MoreMenusHelper\",\"inner_classes\":[\"com.pvr.appmanager.utils.menu.MoreMenusHelper.Companion\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.MenuType\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.Type\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.WhenMappings\"],\"inner_class_count\":4,\"method_count\":10,\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"(Ld/b0/b/l;Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;)V\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(d.b0.b.l, com.pvr.appmanager.utils.menu.MoreMenusHelper): void\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/utils/menu/MoreMenusHelper$MenuType;ZLjava/lang/Object;I)Lcom/pvr/appmanager/utils/menu/MenuBean;\",\"is_constructor\":false,\"name\":\"createMenu\",\"def_pos\":0,\"signature\":\"createMenu(com.pvr.appmanager.utils.menu.MoreMenusHelper$MenuType, boolean, T, int): com.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\"},{\"dex_descriptor\":\"(Landroid/content/Context;Lcom/pvr/appmanager/utils/menu/MenuBean;Landroid/view/View$OnClickListener;)Landroid/view/View;\",\"is_constructor\":false,\"name\":\"generateView\",\"def_pos\":0,\"signature\":\"generateView(android.content.Context, com.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e, android.view.View$OnClickListener): android.view.View\"},{\"dex_descriptor\":\"(Ljava/lang/Object;ILd/b0/b/p;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getAllMenus\",\"def_pos\":0,\"signature\":\"getAllMenus(T, int, d.b0.b.p\\u003c? super com.pvr.appmanager.utils.menu.MoreMenusHelper$Type, ? super T, java.lang.Boolean\\u003e): java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e\"},{\"dex_descriptor\":\"(Ljava/lang/Object;I)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getNoInstalledMenus\",\"def_pos\":0,\"signature\":\"getNoInstalledMenus(T, int): java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e\"},{\"dex_descriptor\":\"(Ld/b0/b/l;Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;)V\",\"is_constructor\":false,\"name\":\"m24showMoreMenu$lambda2$lambda1\",\"def_pos\":0,\"signature\":\"m24showMoreMenu$lambda2$lambda1(d.b0.b.l, com.pvr.appmanager.utils.menu.MoreMenusHelper): void\"},{\"dex_descriptor\":\"(Landroid/view/View;Landroid/view/View;ILjava/util/List;Landroid/view/View$OnClickListener;ILd/b0/b/l;)Landroid/widget/PopupWindow;\",\"is_constructor\":false,\"name\":\"showMoreMenu\",\"def_pos\":0,\"signature\":\"showMoreMenu(android.view.View, android.view.View, int, java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e, android.view.View$OnClickListener, int, d.b0.b.l\\u003c? super java.lang.Boolean, d.t\\u003e): android.widget.PopupWindow\"},{\"dex_descriptor\":\"(Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;Landroid/view/View;Landroid/view/View;ILjava/util/List;Landroid/view/View$OnClickListener;ILd/b0/b/l;ILjava/lang/Object;)Landroid/widget/PopupWindow;\",\"is_constructor\":false,\"name\":\"showMoreMenu$default\",\"def_pos\":0,\"signature\":\"showMoreMenu$default(com.pvr.appmanager.utils.menu.MoreMenusHelper, android.view.View, android.view.View, int, java.util.List, android.view.View$OnClickListener, int, d.b0.b.l, int, java.lang.Object): android.widget.PopupWindow\"}]}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_xrefs_to_method",
+          "input": {
+            "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+            "method_name": "getAllMenus",
+            "overload_index": 0,
+            "limit": 2147483647,
+            "resolve_line": false
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"count\":1,\"items\":[{\"kind\":\"method\",\"name\":\"F\",\"full_name\":\"com.pvr.appmanager.z.g0.F\",\"containing_class\":\"com.pvr.appmanager.z.g0\",\"top_class\":\"com.pvr.appmanager.z.g0\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":17,\"dex_method_index\":44237,\"source_raw_method_id\":\"com.pvr.appmanager.z.g0.F(I)Ljava/util/List;\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL\"}],\"direct_invokes_exhaustive\":true}],\"total\":1,\"resolve_line\":false,\"target\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper.getAllMenus\",\"overload_index\":0,\"reported_signature\":\"getAllMenus(T, int, d.b0.b.p\\u003c? super com.pvr.appmanager.utils.menu.MoreMenusHelper$Type, ? super T, java.lang.Boolean\\u003e): java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+      "method_name": "getAllMenus",
+      "overload_index": 0,
+      "reported_signature": "getAllMenus(T, int, d.b0.b.p<? super com.pvr.appmanager.utils.menu.MoreMenusHelper$Type, ? super T, java.lang.Boolean>): java.util.List<com.pvr.appmanager.utils.menu.MenuBean<T>>",
+      "dex_descriptor": "(Ljava/lang/Object;ILd/b0/b/p;)Ljava/util/List;",
+      "total": 1,
+      "references": [
+        {
+          "kind": "method",
+          "name": "F",
+          "reported_full_name": "com.pvr.appmanager.z.g0.F",
+          "containing_class": "com.pvr.appmanager.z.g0",
+          "top_class": "com.pvr.appmanager.z.g0",
+          "source_line": null,
+          "dex_offset": null,
+          "direct_invokes_exhaustive": true,
+          "direct_invokes": [
+            {
+              "dex_entry": "classes.dex",
+              "source_raw_method_id": "com.pvr.appmanager.z.g0.F(I)Ljava/util/List;",
+              "dex_code_unit_offset": 17,
+              "dex_method_index": 44237,
+              "opcode": "INVOKE_VIRTUAL"
+            }
+          ]
+        }
+      ],
+      "coverage": "complete",
+      "reference_unit": "using_node"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_4f16337159ce205009408a823c2f9afa385580603ac1eeadb009e169a9464473",
+    "subject": {
+      "name": "picolibrary-aligned-unsigned.apk",
+      "digest": {
+        "sha256": "a0ddbf4b65107fbaf71f91c48ad82361a3ca5869980f3aace9091d6e65ab30a6"
+      },
+      "local_path": "C:\\Users\\Gexoty\\Documents\\Codex\\2026-10-21\\windows-android-apk-rea-reverse-engineer-3\\work\\picolibrary\\repository\\build\\20261021-005629-179766\\picolibrary-aligned-unsigned.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_package",
+    "parameters": {
+      "path": "C:/Users/Gexoty/Documents/Codex/2026-10-21/windows-android-apk-rea-reverse-engineer-3/work/picolibrary/repository/build/20261021-005629-179766/picolibrary-aligned-unsigned.apk"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-582a780aae8bfa512c5bec58d048c272\\target.apk",
+        "class_count": 3422,
+        "resource_count": 1412,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "load_apk",
+          "input": {
+            "path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-582a780aae8bfa512c5bec58d048c272\\target.apk",
+            "threads": 1,
+            "resources": "full"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\Gexoty\\\\AppData\\\\Local\\\\Temp\\\\rea-android-582a780aae8bfa512c5bec58d048c272\\\\target.apk\",\"class_count\":3422,\"raw_class_count\":3422,\"resource_count\":1412,\"load_duration_ms\":3701,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_app_info",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"package\":\"com.gexoty.picolibrary\",\"version_name\":\"2.9.5\",\"version_code\":\"200905100\",\"min_sdk\":\"29\",\"target_sdk\":\"29\",\"permissions\":[\"android.permission.ACCESS_NETWORK_STATE\",\"android.permission.INTERNET\",\"android.permission.DELETE_PACKAGES\",\"android.Manifest.permission.PACKAGE_USAGE_STATS\",\"com.picovr.parentalcontrol.provider.permission\",\"com.picovr.store.permission.ACCESS_USER_DATA\",\"com.android.permissioncontroller.permision.APP_DIALOG_PERMISSION_DETAILS\",\"com.bytedance.pico.matrix.parentalcontrol.provider.permission\",\"com.pvr.vrdisplay.permission.SHOW_TOAST\",\"com.bytedance.pico.matrix.account.provide.read\",\"android.permission.READ_PRIVILEGED_PHONE_STATE\",\"android.permission.ACCESS_WIFI_STATE\",\"android.permission.WAKE_LOCK\",\"android.permission.RECEIVE_BOOT_COMPLETED\",\"android.permission.FOREGROUND_SERVICE\",\"os.permission.BIND_TEA_TRACKER_SERVICE\",\"android.permission.FORCE_STOP_PACKAGES\",\"android.permission.QUERY_ALL_PACKAGES\",\"android.permission.PACKAGE_USAGE_STATS\",\"moe.shizuku.manager.permission.API_V23\"]}"
+              }
+            ]
+          }
+        },
+        {
+          "operation": "get_android_manifest",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:versionCode=\"200905100\"\r\n    android:versionName=\"2.9.5\"\r\n    android:compileSdkVersion=\"29\"\r\n    android:compileSdkVersionCodename=\"10\"\r\n    package=\"com.gexoty.picolibrary\"\r\n    platformBuildVersionCode=\"29\"\r\n    platformBuildVersionName=\"10\">\r\n    <uses-sdk\r\n        android:minSdkVersion=\"29\"\r\n        android:targetSdkVersion=\"29\"/>\r\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\r\n    <uses-permission android:name=\"android.permission.DELETE_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.Manifest.permission.PACKAGE_USAGE_STATS\"/>\r\n    <uses-permission android:name=\"com.picovr.parentalcontrol.provider.permission\"/>\r\n    <uses-permission android:name=\"com.picovr.store.permission.ACCESS_USER_DATA\"/>\r\n    <uses-permission android:name=\"com.android.permissioncontroller.permision.APP_DIALOG_PERMISSION_DETAILS\"/>\r\n    <permission\r\n        android:name=\"com.gexoty.picolibrary.permission.WEBAPP\"\r\n        android:protectionLevel=\"signatureOrSystem\"/>\r\n    <permission\r\n        android:name=\"com.gexoty.picolibrary.permission.HIDELIST\"\r\n        android:protectionLevel=\"signature\"/>\r\n    <uses-permission android:name=\"com.bytedance.pico.matrix.parentalcontrol.provider.permission\"/>\r\n    <uses-permission android:name=\"com.pvr.vrdisplay.permission.SHOW_TOAST\"/>\r\n    <uses-permission android:name=\"com.bytedance.pico.matrix.account.provide.read\"/>\r\n    <uses-permission android:name=\"android.permission.READ_PRIVILEGED_PHONE_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\r\n    <uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>\r\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>\r\n    <uses-permission android:name=\"os.permission.BIND_TEA_TRACKER_SERVICE\"/>\r\n    <application\r\n        android:theme=\"@style/AppTheme\"\r\n        android:label=\"@string/app_name\"\r\n        android:icon=\"@drawable/ic_launcher\"\r\n        android:name=\"com.pvr.appmanager.AppApplication\"\r\n        android:allowBackup=\"false\"\r\n        android:extractNativeLibs=\"true\"\r\n        android:usesCleartextTraffic=\"true\"\r\n        android:networkSecurityConfig=\"@xml/network_security_config\"\r\n        android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\">\r\n        <activity\r\n            android:name=\"com.pvr.appmanager.settings.AppSettingsActivity\"\r\n            android:exported=\"false\"\r\n            android:launchMode=\"singleInstance\"\r\n            android:screenOrientation=\"landscape\">\r\n            <layout\r\n                android:defaultWidth=\"900dp\"\r\n                android:defaultHeight=\"600dp\"/>\r\n            <meta-data\r\n                android:name=\"pico.vr.position\"\r\n                android:value=\"near\"/>\r\n        </activity>\r\n        <activity\r\n            android:name=\"com.pvr.appmanager.AllAppActivity\"\r\n            android:exported=\"true\"\r\n            android:excludeFromRecents=\"true\"\r\n            android:launchMode=\"singleInstance\"\r\n            android:screenOrientation=\"landscape\"\r\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|mnc|mcc\">\r\n            <layout\r\n                android:defaultWidth=\"900dp\"\r\n                android:defaultHeight=\"600dp\"/>\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\"/>\r\n                <category android:name=\"android.intent.category.LAUNCHER\"/>\r\n            </intent-filter>\r\n            <intent-filter>\r\n                <action android:name=\"com.gexoty.picolibrary.OPEN_LIBRARY\"/>\r\n                <category android:name=\"android.intent.category.DEFAULT\"/>\r\n            </intent-filter>\r\n            <meta-data\r\n                android:name=\"pico.vr.position\"\r\n                android:value=\"near\"/>\r\n        </activity>\r\n        <provider\r\n            android:name=\"com.pvr.appmanager.datacache.webapp.WebAppProvider\"\r\n            android:permission=\"com.gexoty.picolibrary.permission.WEBAPP\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.webapp.provider\"/>\r\n        <provider\r\n            android:name=\"com.pvr.appmanager.datacache.backlist.HideListProvider\"\r\n            android:permission=\"com.gexoty.picolibrary.permission.HIDELIST\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.hidelist.provider\"/>\r\n        <meta-data\r\n            android:name=\"pvr.2dtovr.mode\"\r\n            android:value=\"6\"/>\r\n        <meta-data\r\n            android:name=\"pvr.display.orientation\"\r\n            android:value=\"180\"/>\r\n        <meta-data\r\n            android:name=\"isPUI\"\r\n            android:value=\"1\"/>\r\n        <meta-data\r\n            android:name=\"pvr.vrshell.mode\"\r\n            android:value=\"1\"/>\r\n        <meta-data\r\n            android:name=\"support_parent_control\"\r\n            android:value=\"true\"/>\r\n        <meta-data\r\n            android:name=\"feature\"\r\n            android:value=\"2\"/>\r\n        <meta-data\r\n            android:name=\"teatracker_app_id\"\r\n            android:value=\"@string/tracker_app_id\"/>\r\n        <service\r\n            android:name=\"com.bytedance.common.wschannel.server.WsChannelService\"\r\n            android:exported=\"false\"\r\n            android:process=\":push\"/>\r\n        <service\r\n            android:name=\"com.bytedance.common.wschannel.client.WsClientService\"\r\n            android:exported=\"false\"/>\r\n        <provider\r\n            android:name=\"com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.WsChannelMultiProcessSharedProvider\"/>\r\n        <activity android:name=\"com.bytedance.bdinstall.migrate.MigrateDetectorActivity\"/>\r\n        <provider\r\n            android:name=\"com.bytedance.bdinstall.BDInstallProvider\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.bdinstall.provider\"/>\r\n        <meta-data\r\n            android:name=\"com.google.android.gms.version\"\r\n            android:value=\"@integer/google_play_services_version\"/>\r\n        <provider\r\n            android:name=\"androidx.work.impl.WorkManagerInitializer\"\r\n            android:exported=\"false\"\r\n            android:multiprocess=\"true\"\r\n            android:authorities=\"com.gexoty.picolibrary.workmanager-init\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.background.systemalarm.SystemAlarmService\"\r\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.background.systemjob.SystemJobService\"\r\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\r\n            android:enabled=\"@bool/enable_system_job_service_default\"\r\n            android:exported=\"true\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.foreground.SystemForegroundService\"\r\n            android:enabled=\"@bool/enable_system_foreground_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\"/>\r\n                <action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.BATTERY_OKAY\"/>\r\n                <action android:name=\"android.intent.action.BATTERY_LOW\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_LOW\"/>\r\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_OK\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.RescheduleReceiver\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.BOOT_COMPLETED\"/>\r\n                <action android:name=\"android.intent.action.TIME_SET\"/>\r\n                <action android:name=\"android.intent.action.TIMEZONE_CHANGED\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\"\r\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"androidx.work.impl.background.systemalarm.UpdateProxies\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.diagnostics.DiagnosticsReceiver\"\r\n            android:permission=\"android.permission.DUMP\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"true\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <service\r\n            android:name=\"androidx.room.MultiInstanceInvalidationService\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"true\"/>\r\n        <provider\r\n            android:name=\"androidx.lifecycle.ProcessLifecycleOwnerInitializer\"\r\n            android:exported=\"false\"\r\n            android:multiprocess=\"true\"\r\n            android:authorities=\"com.gexoty.picolibrary.lifecycle-process\"/>\r\n        <provider\r\n            android:name=\"rikka.shizuku.ShizukuProvider\"\r\n            android:permission=\"android.permission.INTERACT_ACROSS_USERS_FULL\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"true\"\r\n            android:multiprocess=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.shizuku\"/>\r\n        <meta-data\r\n            android:name=\"moe.shizuku.client.V3_SUPPORT\"\r\n            android:value=\"true\"/>\r\n    </application>\r\n    <uses-permission android:name=\"android.permission.FORCE_STOP_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.permission.QUERY_ALL_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.permission.PACKAGE_USAGE_STATS\"/>\r\n    <uses-permission android:name=\"moe.shizuku.manager.permission.API_V23\"/>\r\n</manifest>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "package_name": "com.gexoty.picolibrary",
+      "version_name": "2.9.5",
+      "version_code": "200905100",
+      "min_sdk": "29",
+      "target_sdk": "29",
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.DELETE_PACKAGES",
+        "android.Manifest.permission.PACKAGE_USAGE_STATS",
+        "com.picovr.parentalcontrol.provider.permission",
+        "com.picovr.store.permission.ACCESS_USER_DATA",
+        "com.android.permissioncontroller.permision.APP_DIALOG_PERMISSION_DETAILS",
+        "com.bytedance.pico.matrix.parentalcontrol.provider.permission",
+        "com.pvr.vrdisplay.permission.SHOW_TOAST",
+        "com.bytedance.pico.matrix.account.provide.read",
+        "android.permission.READ_PRIVILEGED_PHONE_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "os.permission.BIND_TEA_TRACKER_SERVICE",
+        "android.permission.FORCE_STOP_PACKAGES",
+        "android.permission.QUERY_ALL_PACKAGES",
+        "android.permission.PACKAGE_USAGE_STATS",
+        "moe.shizuku.manager.permission.API_V23"
+      ],
+      "manifest": {
+        "status": "complete",
+        "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:versionCode=\"200905100\"\r\n    android:versionName=\"2.9.5\"\r\n    android:compileSdkVersion=\"29\"\r\n    android:compileSdkVersionCodename=\"10\"\r\n    package=\"com.gexoty.picolibrary\"\r\n    platformBuildVersionCode=\"29\"\r\n    platformBuildVersionName=\"10\">\r\n    <uses-sdk\r\n        android:minSdkVersion=\"29\"\r\n        android:targetSdkVersion=\"29\"/>\r\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\r\n    <uses-permission android:name=\"android.permission.DELETE_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.Manifest.permission.PACKAGE_USAGE_STATS\"/>\r\n    <uses-permission android:name=\"com.picovr.parentalcontrol.provider.permission\"/>\r\n    <uses-permission android:name=\"com.picovr.store.permission.ACCESS_USER_DATA\"/>\r\n    <uses-permission android:name=\"com.android.permissioncontroller.permision.APP_DIALOG_PERMISSION_DETAILS\"/>\r\n    <permission\r\n        android:name=\"com.gexoty.picolibrary.permission.WEBAPP\"\r\n        android:protectionLevel=\"signatureOrSystem\"/>\r\n    <permission\r\n        android:name=\"com.gexoty.picolibrary.permission.HIDELIST\"\r\n        android:protectionLevel=\"signature\"/>\r\n    <uses-permission android:name=\"com.bytedance.pico.matrix.parentalcontrol.provider.permission\"/>\r\n    <uses-permission android:name=\"com.pvr.vrdisplay.permission.SHOW_TOAST\"/>\r\n    <uses-permission android:name=\"com.bytedance.pico.matrix.account.provide.read\"/>\r\n    <uses-permission android:name=\"android.permission.READ_PRIVILEGED_PHONE_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\r\n    <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\r\n    <uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>\r\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>\r\n    <uses-permission android:name=\"os.permission.BIND_TEA_TRACKER_SERVICE\"/>\r\n    <application\r\n        android:theme=\"@style/AppTheme\"\r\n        android:label=\"@string/app_name\"\r\n        android:icon=\"@drawable/ic_launcher\"\r\n        android:name=\"com.pvr.appmanager.AppApplication\"\r\n        android:allowBackup=\"false\"\r\n        android:extractNativeLibs=\"true\"\r\n        android:usesCleartextTraffic=\"true\"\r\n        android:networkSecurityConfig=\"@xml/network_security_config\"\r\n        android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\">\r\n        <activity\r\n            android:name=\"com.pvr.appmanager.settings.AppSettingsActivity\"\r\n            android:exported=\"false\"\r\n            android:launchMode=\"singleInstance\"\r\n            android:screenOrientation=\"landscape\">\r\n            <layout\r\n                android:defaultWidth=\"900dp\"\r\n                android:defaultHeight=\"600dp\"/>\r\n            <meta-data\r\n                android:name=\"pico.vr.position\"\r\n                android:value=\"near\"/>\r\n        </activity>\r\n        <activity\r\n            android:name=\"com.pvr.appmanager.AllAppActivity\"\r\n            android:exported=\"true\"\r\n            android:excludeFromRecents=\"true\"\r\n            android:launchMode=\"singleInstance\"\r\n            android:screenOrientation=\"landscape\"\r\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|mnc|mcc\">\r\n            <layout\r\n                android:defaultWidth=\"900dp\"\r\n                android:defaultHeight=\"600dp\"/>\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\"/>\r\n                <category android:name=\"android.intent.category.LAUNCHER\"/>\r\n            </intent-filter>\r\n            <intent-filter>\r\n                <action android:name=\"com.gexoty.picolibrary.OPEN_LIBRARY\"/>\r\n                <category android:name=\"android.intent.category.DEFAULT\"/>\r\n            </intent-filter>\r\n            <meta-data\r\n                android:name=\"pico.vr.position\"\r\n                android:value=\"near\"/>\r\n        </activity>\r\n        <provider\r\n            android:name=\"com.pvr.appmanager.datacache.webapp.WebAppProvider\"\r\n            android:permission=\"com.gexoty.picolibrary.permission.WEBAPP\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.webapp.provider\"/>\r\n        <provider\r\n            android:name=\"com.pvr.appmanager.datacache.backlist.HideListProvider\"\r\n            android:permission=\"com.gexoty.picolibrary.permission.HIDELIST\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.hidelist.provider\"/>\r\n        <meta-data\r\n            android:name=\"pvr.2dtovr.mode\"\r\n            android:value=\"6\"/>\r\n        <meta-data\r\n            android:name=\"pvr.display.orientation\"\r\n            android:value=\"180\"/>\r\n        <meta-data\r\n            android:name=\"isPUI\"\r\n            android:value=\"1\"/>\r\n        <meta-data\r\n            android:name=\"pvr.vrshell.mode\"\r\n            android:value=\"1\"/>\r\n        <meta-data\r\n            android:name=\"support_parent_control\"\r\n            android:value=\"true\"/>\r\n        <meta-data\r\n            android:name=\"feature\"\r\n            android:value=\"2\"/>\r\n        <meta-data\r\n            android:name=\"teatracker_app_id\"\r\n            android:value=\"@string/tracker_app_id\"/>\r\n        <service\r\n            android:name=\"com.bytedance.common.wschannel.server.WsChannelService\"\r\n            android:exported=\"false\"\r\n            android:process=\":push\"/>\r\n        <service\r\n            android:name=\"com.bytedance.common.wschannel.client.WsClientService\"\r\n            android:exported=\"false\"/>\r\n        <provider\r\n            android:name=\"com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.WsChannelMultiProcessSharedProvider\"/>\r\n        <activity android:name=\"com.bytedance.bdinstall.migrate.MigrateDetectorActivity\"/>\r\n        <provider\r\n            android:name=\"com.bytedance.bdinstall.BDInstallProvider\"\r\n            android:exported=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.bdinstall.provider\"/>\r\n        <meta-data\r\n            android:name=\"com.google.android.gms.version\"\r\n            android:value=\"@integer/google_play_services_version\"/>\r\n        <provider\r\n            android:name=\"androidx.work.impl.WorkManagerInitializer\"\r\n            android:exported=\"false\"\r\n            android:multiprocess=\"true\"\r\n            android:authorities=\"com.gexoty.picolibrary.workmanager-init\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.background.systemalarm.SystemAlarmService\"\r\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.background.systemjob.SystemJobService\"\r\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\r\n            android:enabled=\"@bool/enable_system_job_service_default\"\r\n            android:exported=\"true\"\r\n            android:directBootAware=\"false\"/>\r\n        <service\r\n            android:name=\"androidx.work.impl.foreground.SystemForegroundService\"\r\n            android:enabled=\"@bool/enable_system_foreground_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\"/>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\"/>\r\n                <action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.BATTERY_OKAY\"/>\r\n                <action android:name=\"android.intent.action.BATTERY_LOW\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_LOW\"/>\r\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_OK\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.RescheduleReceiver\"\r\n            android:enabled=\"false\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.BOOT_COMPLETED\"/>\r\n                <action android:name=\"android.intent.action.TIME_SET\"/>\r\n                <action android:name=\"android.intent.action.TIMEZONE_CHANGED\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\"\r\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"androidx.work.impl.background.systemalarm.UpdateProxies\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <receiver\r\n            android:name=\"androidx.work.impl.diagnostics.DiagnosticsReceiver\"\r\n            android:permission=\"android.permission.DUMP\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"true\"\r\n            android:directBootAware=\"false\">\r\n            <intent-filter>\r\n                <action android:name=\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"/>\r\n            </intent-filter>\r\n        </receiver>\r\n        <service\r\n            android:name=\"androidx.room.MultiInstanceInvalidationService\"\r\n            android:exported=\"false\"\r\n            android:directBootAware=\"true\"/>\r\n        <provider\r\n            android:name=\"androidx.lifecycle.ProcessLifecycleOwnerInitializer\"\r\n            android:exported=\"false\"\r\n            android:multiprocess=\"true\"\r\n            android:authorities=\"com.gexoty.picolibrary.lifecycle-process\"/>\r\n        <provider\r\n            android:name=\"rikka.shizuku.ShizukuProvider\"\r\n            android:permission=\"android.permission.INTERACT_ACROSS_USERS_FULL\"\r\n            android:enabled=\"true\"\r\n            android:exported=\"true\"\r\n            android:multiprocess=\"false\"\r\n            android:authorities=\"com.gexoty.picolibrary.shizuku\"/>\r\n        <meta-data\r\n            android:name=\"moe.shizuku.client.V3_SUPPORT\"\r\n            android:value=\"true\"/>\r\n    </application>\r\n    <uses-permission android:name=\"android.permission.FORCE_STOP_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.permission.QUERY_ALL_PACKAGES\"/>\r\n    <uses-permission android:name=\"android.permission.PACKAGE_USAGE_STATS\"/>\r\n    <uses-permission android:name=\"moe.shizuku.manager.permission.API_V23\"/>\r\n</manifest>",
+        "reported_total_bytes": null
+      },
+      "class_count": 3422,
+      "resource_count": 1412,
+      "signature_verification": "not_performed"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "AndroidManifest.xml"
+      }
+    ],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_43e24cfb990d21a97cb6268bc0bf3f9ee3a0efcef085a6cc5244caa6c7f66f2b",
+    "subject": {
+      "name": "picolibrary-aligned-unsigned.apk",
+      "digest": {
+        "sha256": "a0ddbf4b65107fbaf71f91c48ad82361a3ca5869980f3aace9091d6e65ab30a6"
+      },
+      "local_path": "C:\\Users\\Gexoty\\Documents\\Codex\\2026-10-21\\windows-android-apk-rea-reverse-engineer-3\\work\\picolibrary\\repository\\build\\20261021-005629-179766\\picolibrary-aligned-unsigned.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "C:/Users/Gexoty/Documents/Codex/2026-10-21/windows-android-apk-rea-reverse-engineer-3/work/picolibrary/repository/build/20261021-005629-179766/picolibrary-aligned-unsigned.apk",
+      "class_name": "com.pvr.appmanager.Filter",
+      "method_name": "isStoreSource"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-582a780aae8bfa512c5bec58d048c272\\target.apk",
+        "class_count": 3422,
+        "resource_count": 1412,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.pvr.appmanager.Filter"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"name\":\"Filter\",\"inner_classes\":[\"com.pvr.appmanager.Filter.a\",\"com.pvr.appmanager.Filter.b\",\"com.pvr.appmanager.Filter.c\",\"com.pvr.appmanager.Filter.d\",\"com.pvr.appmanager.Filter.e\",\"com.pvr.appmanager.Filter.f\",\"com.pvr.appmanager.Filter.g\",\"com.pvr.appmanager.Filter.h\"],\"inner_class_count\":8,\"method_count\":32,\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"access$getMCurrAdapter$p(com.pvr.appmanager.Filter): com.pvr.appmanager.z.g0\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Lcom/pvr/appmanager/z/g0;\",\"is_constructor\":false,\"name\":\"access$getMCurrAdapter$p\"},{\"def_pos\":0,\"signature\":\"access$getMCurrSortType$p(com.pvr.appmanager.Filter): java.lang.String\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"access$getMCurrSortType$p\"},{\"def_pos\":0,\"signature\":\"access$getMRecentMap(com.pvr.appmanager.Filter): java.util.Map\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/Filter;)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"access$getMRecentMap\"},{\"def_pos\":0,\"signature\":\"addFavorFilter(java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.dao.AppInfo\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/Map;)V\",\"is_constructor\":false,\"name\":\"addFavorFilter\"},{\"def_pos\":0,\"signature\":\"appendData(com.pvr.appmanager.z.g0, com.pvr.appmanager.entity.AppData): void\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/z/g0;Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"appendData\"},{\"def_pos\":0,\"signature\":\"filterData(java.lang.String, com.pvr.appmanager.z.g0, java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e, boolean, java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/z/g0;Ljava/util/List;ZLjava/lang/String;)V\",\"is_constructor\":false,\"name\":\"filterData\"},{\"def_pos\":0,\"signature\":\"getGameApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.ArrayList\\u003cjava.lang.String\\u003e\",\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/ArrayList;\",\"is_constructor\":false,\"name\":\"getGameApps\"},{\"def_pos\":0,\"signature\":\"getMFilterList(): java.util.List\\u003ccom.pvr.appmanager.Filter$a\\u003e\",\"dex_descriptor\":\"()Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getMFilterList\"},{\"def_pos\":0,\"signature\":\"getMRecentMap(): java.util.Map\\u003cjava.lang.String, java.lang.Long\\u003e\",\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getMRecentMap\"},{\"def_pos\":0,\"signature\":\"getMStoreSourceDataMap(): java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.entity.StoreAppInfo\\u003e\",\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getMStoreSourceDataMap\"},{\"def_pos\":0,\"signature\":\"getSortType(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getSortType\"},{\"def_pos\":0,\"signature\":\"getTargetFilter(java.lang.String): com.pvr.appmanager.Filter$a\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/pvr/appmanager/Filter$a;\",\"is_constructor\":false,\"name\":\"getTargetFilter\"},{\"def_pos\":0,\"signature\":\"getUnKnownApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e\",\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getUnKnownApps\"},{\"def_pos\":0,\"signature\":\"getUpdateApps(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e\",\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getUpdateApps\"},{\"def_pos\":0,\"signature\":\"initByDeviceType(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initByDeviceType\"},{\"def_pos\":0,\"signature\":\"initPkgUsageStatsData(java.util.List\\u003ccom.pvr.appmanager.entity.AppData\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/List;)V\",\"is_constructor\":false,\"name\":\"initPkgUsageStatsData\"},{\"def_pos\":0,\"signature\":\"initSourceDataFromStore(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initSourceDataFromStore\"},{\"def_pos\":0,\"signature\":\"initToB(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initToB\"},{\"def_pos\":0,\"signature\":\"initToC(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"initToC\"},{\"def_pos\":0,\"signature\":\"isPicoSDK(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPicoSDK\"},{\"def_pos\":0,\"signature\":\"isPreloadedApp(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedApp\"},{\"def_pos\":0,\"signature\":\"isPreloadedGame(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedGame\"},{\"def_pos\":0,\"signature\":\"isPreloadedPUI(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"isPreloadedPUI\"},{\"def_pos\":0,\"signature\":\"isStoreSource(com.pvr.appmanager.entity.AppData): boolean\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/entity/AppData;)Z\",\"is_constructor\":false,\"name\":\"isStoreSource\"},{\"def_pos\":0,\"signature\":\"judgeSourceType(com.pvr.appmanager.entity.AppData): void\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"judgeSourceType\"},{\"def_pos\":0,\"signature\":\"refreshPkgUsageStatsDat4Start(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"refreshPkgUsageStatsDat4Start\"},{\"def_pos\":0,\"signature\":\"refreshStoreData(java.lang.String, com.pvr.appmanager.entity.AppData): void\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/entity/AppData;)V\",\"is_constructor\":false,\"name\":\"refreshStoreData\"},{\"def_pos\":0,\"signature\":\"refreshStoreMap(java.util.Map\\u003cjava.lang.String, com.pvr.appmanager.entity.StoreAppInfo\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/Map;)V\",\"is_constructor\":false,\"name\":\"refreshStoreMap\"},{\"def_pos\":0,\"signature\":\"removeData(com.pvr.appmanager.z.g0, java.lang.String): void\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/z/g0;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"removeData\"},{\"def_pos\":0,\"signature\":\"sortData(java.lang.String, com.pvr.appmanager.z.g0): void\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/pvr/appmanager/z/g0;)V\",\"is_constructor\":false,\"name\":\"sortData\"},{\"def_pos\":0,\"signature\":\"updateWebAppUsageStatsData(com.pvr.appmanager.b0.b.a, boolean): void\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/b0/b/a;Z)V\",\"is_constructor\":false,\"name\":\"updateWebAppUsageStatsData\"}],\"fields\":[{\"type\":\"com.pvr.appmanager.z.g0\",\"name\":\"mCurrAdapter\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"mCurrSortType\",\"def_pos\":0},{\"type\":\"d.e\",\"name\":\"mFilterList$delegate\",\"def_pos\":0},{\"type\":\"d.e\",\"name\":\"mRecentMap$delegate\",\"def_pos\":0},{\"type\":\"com.pvr.appmanager.Filter$a\",\"name\":\"mSelectedFilter\",\"def_pos\":0},{\"type\":\"d.e\",\"name\":\"mStoreSourceDataMap$delegate\",\"def_pos\":0}],\"field_count\":6,\"full_name\":\"com.pvr.appmanager.Filter\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "com.pvr.appmanager.Filter",
+            "method_name": "isStoreSource",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"dex_descriptor\":\"(Lcom/pvr/appmanager/entity/AppData;)Z\",\"overload_count\":1,\"method_name\":\"isStoreSource\",\"overload_index\":0,\"full_name\":\"com.pvr.appmanager.Filter.isStoreSource\",\"fell_back\":false,\"markers\":[],\"body\":\"    private final boolean isStoreSource(AppData appData) {\\r\\n        return true;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.pvr.appmanager.Filter\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "class_name": "com.pvr.appmanager.Filter",
+      "method": {
+        "name": "isStoreSource",
+        "reported_signature": "isStoreSource(com.pvr.appmanager.entity.AppData): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/pvr/appmanager/entity/AppData;)Z"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private final boolean isStoreSource(AppData appData) {\r\n        return true;\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_289b41df6f8be37714f521ff51d8198fb677cb97822719fa5295a1b270d2e23f",
+    "subject": {
+      "name": "picolibrary-aligned-unsigned.apk",
+      "digest": {
+        "sha256": "a0ddbf4b65107fbaf71f91c48ad82361a3ca5869980f3aace9091d6e65ab30a6"
+      },
+      "local_path": "C:\\Users\\Gexoty\\Documents\\Codex\\2026-10-21\\windows-android-apk-rea-reverse-engineer-3\\work\\picolibrary\\repository\\build\\20261021-005629-179766\\picolibrary-aligned-unsigned.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "C:/Users/Gexoty/Documents/Codex/2026-10-21/windows-android-apk-rea-reverse-engineer-3/work/picolibrary/repository/build/20261021-005629-179766/picolibrary-aligned-unsigned.apk",
+      "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+      "method_name": "getAllMenus"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-582a780aae8bfa512c5bec58d048c272\\target.apk",
+        "class_count": 3422,
+        "resource_count": 1412,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"name\":\"MoreMenusHelper\",\"inner_classes\":[\"com.pvr.appmanager.utils.menu.MoreMenusHelper.Companion\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.MenuType\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.Type\",\"com.pvr.appmanager.utils.menu.MoreMenusHelper.WhenMappings\"],\"inner_class_count\":4,\"method_count\":10,\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\"},{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"a(d.b0.b.l, com.pvr.appmanager.utils.menu.MoreMenusHelper): void\",\"dex_descriptor\":\"(Ld/b0/b/l;Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;)V\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"createMenu(com.pvr.appmanager.utils.menu.MoreMenusHelper$MenuType, boolean, T, int): com.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/utils/menu/MoreMenusHelper$MenuType;ZLjava/lang/Object;I)Lcom/pvr/appmanager/utils/menu/MenuBean;\",\"is_constructor\":false,\"name\":\"createMenu\"},{\"def_pos\":0,\"signature\":\"generateView(android.content.Context, com.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e, android.view.View$OnClickListener): android.view.View\",\"dex_descriptor\":\"(Landroid/content/Context;Lcom/pvr/appmanager/utils/menu/MenuBean;Landroid/view/View$OnClickListener;)Landroid/view/View;\",\"is_constructor\":false,\"name\":\"generateView\"},{\"def_pos\":0,\"signature\":\"getAllMenus(T, int, d.b0.b.p\\u003c? super com.pvr.appmanager.utils.menu.MoreMenusHelper$Type, ? super T, java.lang.Boolean\\u003e): java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e\",\"dex_descriptor\":\"(Ljava/lang/Object;ILd/b0/b/p;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getAllMenus\"},{\"def_pos\":0,\"signature\":\"getNoInstalledMenus(T, int): java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e\",\"dex_descriptor\":\"(Ljava/lang/Object;I)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getNoInstalledMenus\"},{\"def_pos\":0,\"signature\":\"m27showMoreMenu$lambda2$lambda1(d.b0.b.l, com.pvr.appmanager.utils.menu.MoreMenusHelper): void\",\"dex_descriptor\":\"(Ld/b0/b/l;Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;)V\",\"is_constructor\":false,\"name\":\"m27showMoreMenu$lambda2$lambda1\"},{\"def_pos\":0,\"signature\":\"showMoreMenu(android.view.View, android.view.View, int, java.util.List\\u003ccom.pvr.appmanager.utils.menu.MenuBean\\u003cT\\u003e\\u003e, android.view.View$OnClickListener, int, d.b0.b.l\\u003c? super java.lang.Boolean, d.t\\u003e): android.widget.PopupWindow\",\"dex_descriptor\":\"(Landroid/view/View;Landroid/view/View;ILjava/util/List;Landroid/view/View$OnClickListener;ILd/b0/b/l;)Landroid/widget/PopupWindow;\",\"is_constructor\":false,\"name\":\"showMoreMenu\"},{\"def_pos\":0,\"signature\":\"showMoreMenu$default(com.pvr.appmanager.utils.menu.MoreMenusHelper, android.view.View, android.view.View, int, java.util.List, android.view.View$OnClickListener, int, d.b0.b.l, int, java.lang.Object): android.widget.PopupWindow\",\"dex_descriptor\":\"(Lcom/pvr/appmanager/utils/menu/MoreMenusHelper;Landroid/view/View;Landroid/view/View;ILjava/util/List;Landroid/view/View$OnClickListener;ILd/b0/b/l;ILjava/lang/Object;)Landroid/widget/PopupWindow;\",\"is_constructor\":false,\"name\":\"showMoreMenu$default\"}],\"fields\":[{\"type\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper$Companion\",\"name\":\"Companion\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"TAG\",\"def_pos\":0},{\"type\":\"long\",\"name\":\"mDismissTime\",\"def_pos\":0}],\"field_count\":3,\"full_name\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+            "method_name": "getAllMenus",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"dex_descriptor\":\"(Ljava/lang/Object;ILd/b0/b/p;)Ljava/util/List;\",\"overload_count\":1,\"method_name\":\"getAllMenus\",\"overload_index\":0,\"full_name\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper.getAllMenus\",\"fell_back\":false,\"markers\":[],\"body\":\"    /* JADX WARN: Code duplicated, block: B:11:0x0042  */\\r\\n    /* JADX WARN: Code duplicated, block: B:13:0x0050  */\\r\\n    /* JADX WARN: Code duplicated, block: B:14:0x0058  */\\r\\n    /* JADX WARN: Code duplicated, block: B:18:0x006f  */\\r\\n    /* JADX WARN: Code duplicated, block: B:20:0x007d  */\\r\\n    /* JADX WARN: Code duplicated, block: B:22:0x0089  */\\r\\n    /* JADX WARN: Code duplicated, block: B:25:0x00a0  */\\r\\n    /* JADX WARN: Code duplicated, block: B:28:0x00b7  */\\r\\n    public final List\\u003cMenuBean\\u003cT\\u003e\\u003e getAllMenus(T t, int i, p\\u003c? super Type, ? super T, Boolean\\u003e pVar) {\\r\\n        MenuType menuType;\\r\\n        Type type;\\r\\n        MenuBean\\u003cT\\u003e menuBeanCreateMenu;\\r\\n        d.b0.c.l.e(pVar, \\\"isSpecifyType\\\");\\r\\n        ArrayList arrayList \\u003d new ArrayList();\\r\\n        if (!pVar.invoke(Type.CancelUpdate, t).booleanValue()) {\\r\\n            if (pVar.invoke(Type.UpdateApp, t).booleanValue()) {\\r\\n                menuType \\u003d MenuType.UPDATE;\\r\\n            }\\r\\n            type \\u003d Type.EmptyCard;\\r\\n            if (!pVar.invoke(type, t).booleanValue()) {\\r\\n                if (pVar.invoke(Type.FavorApp, t).booleanValue()) {\\r\\n                    menuBeanCreateMenu \\u003d createMenu(MenuType.FAVOR, true, t, i);\\r\\n                } else {\\r\\n                    menuBeanCreateMenu \\u003d createMenu(MenuType.FAVOR, false, t, i);\\r\\n                }\\r\\n                arrayList.add(menuBeanCreateMenu);\\r\\n            }\\r\\n            if (pVar.invoke(Type.WebApp, t).booleanValue()) {\\r\\n                arrayList.add(createMenu(MenuType.DELETE, false, t, i));\\r\\n                return LibraryExtensions.extendMenus(arrayList, t, i);\\r\\n            }\\r\\n            if (!pVar.invoke(type, t).booleanValue()) {\\r\\n                arrayList.add(createMenu(MenuType.PERMISSION, false, t, i));\\r\\n            }\\r\\n            if (pVar.invoke(Type.StoreApp, t).booleanValue()) {\\r\\n                arrayList.add(createMenu(MenuType.DETAIL, false, t, i));\\r\\n            }\\r\\n            if (!pVar.invoke(Type.SystemApp, t).booleanValue()) {\\r\\n                arrayList.add(createMenu(MenuType.DELETE, false, t, i));\\r\\n            }\\r\\n            return LibraryExtensions.extendMenus(arrayList, t, i);\\r\\n        }\\r\\n        menuType \\u003d MenuType.CANCEL;\\r\\n        arrayList.add(createMenu(menuType, false, t, i));\\r\\n        type \\u003d Type.EmptyCard;\\r\\n        if (!pVar.invoke(type, t).booleanValue()) {\\r\\n            if (pVar.invoke(Type.FavorApp, t).booleanValue()) {\\r\\n                menuBeanCreateMenu \\u003d createMenu(MenuType.FAVOR, true, t, i);\\r\\n            } else {\\r\\n                menuBeanCreateMenu \\u003d createMenu(MenuType.FAVOR, false, t, i);\\r\\n            }\\r\\n            arrayList.add(menuBeanCreateMenu);\\r\\n        }\\r\\n        if (pVar.invoke(Type.WebApp, t).booleanValue()) {\\r\\n            arrayList.add(createMenu(MenuType.DELETE, false, t, i));\\r\\n            return LibraryExtensions.extendMenus(arrayList, t, i);\\r\\n        }\\r\\n        if (!pVar.invoke(type, t).booleanValue()) {\\r\\n            arrayList.add(createMenu(MenuType.PERMISSION, false, t, i));\\r\\n        }\\r\\n        if (pVar.invoke(Type.StoreApp, t).booleanValue()) {\\r\\n            arrayList.add(createMenu(MenuType.DETAIL, false, t, i));\\r\\n        }\\r\\n        if (!pVar.invoke(Type.SystemApp, t).booleanValue()) {\\r\\n            arrayList.add(createMenu(MenuType.DELETE, false, t, i));\\r\\n        }\\r\\n        return LibraryExtensions.extendMenus(arrayList, t, i);\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.pvr.appmanager.utils.menu.MoreMenusHelper\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "class_name": "com.pvr.appmanager.utils.menu.MoreMenusHelper",
+      "method": {
+        "name": "getAllMenus",
+        "reported_signature": "getAllMenus(T, int, d.b0.b.p<? super com.pvr.appmanager.utils.menu.MoreMenusHelper$Type, ? super T, java.lang.Boolean>): java.util.List<com.pvr.appmanager.utils.menu.MenuBean<T>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;ILd/b0/b/p;)Ljava/util/List;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    /* JADX WARN: Code duplicated, block: B:11:0x0042  */\r\n    /* JADX WARN: Code duplicated, block: B:13:0x0050  */\r\n    /* JADX WARN: Code duplicated, block: B:14:0x0058  */\r\n    /* JADX WARN: Code duplicated, block: B:18:0x006f  */\r\n    /* JADX WARN: Code duplicated, block: B:20:0x007d  */\r\n    /* JADX WARN: Code duplicated, block: B:22:0x0089  */\r\n    /* JADX WARN: Code duplicated, block: B:25:0x00a0  */\r\n    /* JADX WARN: Code duplicated, block: B:28:0x00b7  */\r\n    public final List<MenuBean<T>> getAllMenus(T t, int i, p<? super Type, ? super T, Boolean> pVar) {\r\n        MenuType menuType;\r\n        Type type;\r\n        MenuBean<T> menuBeanCreateMenu;\r\n        d.b0.c.l.e(pVar, \"isSpecifyType\");\r\n        ArrayList arrayList = new ArrayList();\r\n        if (!pVar.invoke(Type.CancelUpdate, t).booleanValue()) {\r\n            if (pVar.invoke(Type.UpdateApp, t).booleanValue()) {\r\n                menuType = MenuType.UPDATE;\r\n            }\r\n            type = Type.EmptyCard;\r\n            if (!pVar.invoke(type, t).booleanValue()) {\r\n                if (pVar.invoke(Type.FavorApp, t).booleanValue()) {\r\n                    menuBeanCreateMenu = createMenu(MenuType.FAVOR, true, t, i);\r\n                } else {\r\n                    menuBeanCreateMenu = createMenu(MenuType.FAVOR, false, t, i);\r\n                }\r\n                arrayList.add(menuBeanCreateMenu);\r\n            }\r\n            if (pVar.invoke(Type.WebApp, t).booleanValue()) {\r\n                arrayList.add(createMenu(MenuType.DELETE, false, t, i));\r\n                return LibraryExtensions.extendMenus(arrayList, t, i);\r\n            }\r\n            if (!pVar.invoke(type, t).booleanValue()) {\r\n                arrayList.add(createMenu(MenuType.PERMISSION, false, t, i));\r\n            }\r\n            if (pVar.invoke(Type.StoreApp, t).booleanValue()) {\r\n                arrayList.add(createMenu(MenuType.DETAIL, false, t, i));\r\n            }\r\n            if (!pVar.invoke(Type.SystemApp, t).booleanValue()) {\r\n                arrayList.add(createMenu(MenuType.DELETE, false, t, i));\r\n            }\r\n            return LibraryExtensions.extendMenus(arrayList, t, i);\r\n        }\r\n        menuType = MenuType.CANCEL;\r\n        arrayList.add(createMenu(menuType, false, t, i));\r\n        type = Type.EmptyCard;\r\n        if (!pVar.invoke(type, t).booleanValue()) {\r\n            if (pVar.invoke(Type.FavorApp, t).booleanValue()) {\r\n                menuBeanCreateMenu = createMenu(MenuType.FAVOR, true, t, i);\r\n            } else {\r\n                menuBeanCreateMenu = createMenu(MenuType.FAVOR, false, t, i);\r\n            }\r\n            arrayList.add(menuBeanCreateMenu);\r\n        }\r\n        if (pVar.invoke(Type.WebApp, t).booleanValue()) {\r\n            arrayList.add(createMenu(MenuType.DELETE, false, t, i));\r\n            return LibraryExtensions.extendMenus(arrayList, t, i);\r\n        }\r\n        if (!pVar.invoke(type, t).booleanValue()) {\r\n            arrayList.add(createMenu(MenuType.PERMISSION, false, t, i));\r\n        }\r\n        if (pVar.invoke(Type.StoreApp, t).booleanValue()) {\r\n            arrayList.add(createMenu(MenuType.DETAIL, false, t, i));\r\n        }\r\n        if (!pVar.invoke(Type.SystemApp, t).booleanValue()) {\r\n            arrayList.add(createMenu(MenuType.DELETE, false, t, i));\r\n        }\r\n        return LibraryExtensions.extendMenus(arrayList, t, i);\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_eb16327aeb956e04d6c2184c025626bfe0cf45e3a7876db8058e97e0f60fbfac",
+    "subject": {
+      "name": "picolibrary-aligned-unsigned.apk",
+      "digest": {
+        "sha256": "a0ddbf4b65107fbaf71f91c48ad82361a3ca5869980f3aace9091d6e65ab30a6"
+      },
+      "local_path": "C:\\Users\\Gexoty\\Documents\\Codex\\2026-10-21\\windows-android-apk-rea-reverse-engineer-3\\work\\picolibrary\\repository\\build\\20261021-005629-179766\\picolibrary-aligned-unsigned.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "C:/Users/Gexoty/Documents/Codex/2026-10-21/windows-android-apk-rea-reverse-engineer-3/work/picolibrary/repository/build/20261021-005629-179766/picolibrary-aligned-unsigned.apk",
+      "class_name": "com.gexoty.picolibrary.LibraryExtensions",
+      "method_name": "categoryIndex"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "4"
+      },
+      "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\Gexoty\\AppData\\Local\\Temp\\rea-android-582a780aae8bfa512c5bec58d048c272\\target.apk",
+        "class_count": 3422,
+        "resource_count": 1412,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"available_processors\":12,\"java_version\":\"21.0.5\",\"max_heap_bytes\":8568963072,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.gexoty.picolibrary.LibraryExtensions"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"name\":\"LibraryExtensions\",\"inner_classes\":[\"com.gexoty.picolibrary.LibraryExtensions.AnonymousClass1\"],\"inner_class_count\":1,\"method_count\":35,\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\"},{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"access$000(): android.os.Handler\",\"dex_descriptor\":\"()Landroid/os/Handler;\",\"is_constructor\":false,\"name\":\"access$000\"},{\"def_pos\":0,\"signature\":\"access$100(): java.util.concurrent.ExecutorService\",\"dex_descriptor\":\"()Ljava/util/concurrent/ExecutorService;\",\"is_constructor\":false,\"name\":\"access$100\"},{\"def_pos\":0,\"signature\":\"access$200(android.content.Context, java.lang.String): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"access$200\"},{\"def_pos\":0,\"signature\":\"access$300(java.lang.String, java.lang.Throwable): void\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/Throwable;)V\",\"is_constructor\":false,\"name\":\"access$300\"},{\"def_pos\":0,\"signature\":\"addShortcut(android.app.Activity): void\",\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"addShortcut\"},{\"def_pos\":0,\"signature\":\"app(): android.content.Context\",\"dex_descriptor\":\"()Landroid/content/Context;\",\"is_constructor\":false,\"name\":\"app\"},{\"def_pos\":0,\"signature\":\"attach(android.app.Activity): void\",\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"attach\"},{\"def_pos\":0,\"signature\":\"bindMenu(android.view.View, java.lang.Object, android.view.View$OnClickListener): void\",\"dex_descriptor\":\"(Landroid/view/View;Ljava/lang/Object;Landroid/view/View$OnClickListener;)V\",\"is_constructor\":false,\"name\":\"bindMenu\"},{\"def_pos\":0,\"signature\":\"call(java.lang.Object, java.lang.String): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"call\"},{\"def_pos\":0,\"signature\":\"categoryIndex(java.lang.String): int\",\"dex_descriptor\":\"(Ljava/lang/String;)I\",\"is_constructor\":false,\"name\":\"categoryIndex\"},{\"def_pos\":0,\"signature\":\"chooseBackend(android.app.Activity): void\",\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"chooseBackend\"},{\"def_pos\":0,\"signature\":\"extendMenus(java.util.List, java.lang.Object, int): java.util.List\",\"dex_descriptor\":\"(Ljava/util/List;Ljava/lang/Object;I)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"extendMenus\"},{\"def_pos\":0,\"signature\":\"failed(java.lang.String, java.lang.Throwable): void\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/Throwable;)V\",\"is_constructor\":false,\"name\":\"failed\"},{\"def_pos\":0,\"signature\":\"forceStop(android.content.Context, java.lang.String): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"forceStop\"},{\"def_pos\":0,\"signature\":\"hideUnknown(android.view.View): void\",\"dex_descriptor\":\"(Landroid/view/View;)V\",\"is_constructor\":false,\"name\":\"hideUnknown\"},{\"def_pos\":0,\"signature\":\"lambda$addShortcut$5(android.widget.EditText, android.app.Activity, android.app.AlertDialog, android.view.View): void\",\"dex_descriptor\":\"(Landroid/widget/EditText;Landroid/app/Activity;Landroid/app/AlertDialog;Landroid/view/View;)V\",\"is_constructor\":false,\"name\":\"lambda$addShortcut$5\"},{\"def_pos\":0,\"signature\":\"lambda$addShortcut$6(android.app.AlertDialog, android.widget.EditText, android.app.Activity, android.content.DialogInterface): void\",\"dex_descriptor\":\"(Landroid/app/AlertDialog;Landroid/widget/EditText;Landroid/app/Activity;Landroid/content/DialogInterface;)V\",\"is_constructor\":false,\"name\":\"lambda$addShortcut$6\"},{\"def_pos\":0,\"signature\":\"lambda$attach$2(android.app.Activity, android.view.View): void\",\"dex_descriptor\":\"(Landroid/app/Activity;Landroid/view/View;)V\",\"is_constructor\":false,\"name\":\"lambda$attach$2\"},{\"def_pos\":0,\"signature\":\"lambda$bindMenu$1(java.lang.Object, android.view.View$OnClickListener, android.view.View): void\",\"dex_descriptor\":\"(Ljava/lang/Object;Landroid/view/View$OnClickListener;Landroid/view/View;)V\",\"is_constructor\":false,\"name\":\"lambda$bindMenu$1\"},{\"def_pos\":0,\"signature\":\"lambda$chooseBackend$4(android.app.Activity, java.lang.String[], android.content.DialogInterface, int): void\",\"dex_descriptor\":\"(Landroid/app/Activity;[Ljava/lang/String;Landroid/content/DialogInterface;I)V\",\"is_constructor\":false,\"name\":\"lambda$chooseBackend$4\"},{\"def_pos\":0,\"signature\":\"lambda$forceStop$8(android.content.Context, java.lang.String, java.lang.String, int): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V\",\"is_constructor\":false,\"name\":\"lambda$forceStop$8\"},{\"def_pos\":0,\"signature\":\"lambda$manageShortcuts$7(java.util.List, android.app.Activity, android.content.DialogInterface, int): void\",\"dex_descriptor\":\"(Ljava/util/List;Landroid/app/Activity;Landroid/content/DialogInterface;I)V\",\"is_constructor\":false,\"name\":\"lambda$manageShortcuts$7\"},{\"def_pos\":0,\"signature\":\"lambda$settings$3(android.app.Activity, android.content.DialogInterface, int): void\",\"dex_descriptor\":\"(Landroid/app/Activity;Landroid/content/DialogInterface;I)V\",\"is_constructor\":false,\"name\":\"lambda$settings$3\"},{\"def_pos\":0,\"signature\":\"lambda$toast$0(android.content.Context, java.lang.String): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"lambda$toast$0\"},{\"def_pos\":0,\"signature\":\"manageShortcuts(android.app.Activity): void\",\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"manageShortcuts\"},{\"def_pos\":0,\"signature\":\"mergeInventory(java.util.List): java.util.List\",\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"mergeInventory\"},{\"def_pos\":0,\"signature\":\"newData(android.content.pm.ResolveInfo): java.lang.Object\",\"dex_descriptor\":\"(Landroid/content/pm/ResolveInfo;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"newData\"},{\"def_pos\":0,\"signature\":\"normalTab(java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"normalTab\"},{\"def_pos\":0,\"signature\":\"normalize(java.lang.Object): void\",\"dex_descriptor\":\"(Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"normalize\"},{\"def_pos\":0,\"signature\":\"prefs(android.content.Context): android.content.SharedPreferences\",\"dex_descriptor\":\"(Landroid/content/Context;)Landroid/content/SharedPreferences;\",\"is_constructor\":false,\"name\":\"prefs\"},{\"def_pos\":0,\"signature\":\"settings(android.app.Activity): void\",\"dex_descriptor\":\"(Landroid/app/Activity;)V\",\"is_constructor\":false,\"name\":\"settings\"},{\"def_pos\":0,\"signature\":\"shizukuStop(android.content.Context, java.lang.String, int): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;I)V\",\"is_constructor\":false,\"name\":\"shizukuStop\"},{\"def_pos\":0,\"signature\":\"toast(android.content.Context, java.lang.String): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"toast\"}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"FORCE_STOP\",\"def_pos\":0},{\"type\":\"android.os.Handler\",\"name\":\"MAIN\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"TAG\",\"def_pos\":0},{\"type\":\"java.util.concurrent.ExecutorService\",\"name\":\"WORK\",\"def_pos\":0}],\"field_count\":4,\"full_name\":\"com.gexoty.picolibrary.LibraryExtensions\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "com.gexoty.picolibrary.LibraryExtensions",
+            "method_name": "categoryIndex",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"dex_descriptor\":\"(Ljava/lang/String;)I\",\"overload_count\":1,\"method_name\":\"categoryIndex\",\"overload_index\":0,\"full_name\":\"com.gexoty.picolibrary.LibraryExtensions.categoryIndex\",\"fell_back\":false,\"markers\":[],\"body\":\"    public static int categoryIndex(String str) {\\r\\n        String strNormalTab \\u003d normalTab(str);\\r\\n        if (FilterData.FilterOptionsBean.APP.equals(strNormalTab)) {\\r\\n            return 1;\\r\\n        }\\r\\n        if (FilterData.FilterOptionsBean.GAME.equals(strNormalTab)) {\\r\\n            return 2;\\r\\n        }\\r\\n        if (\\\"update\\\".equals(strNormalTab)) {\\r\\n            return 3;\\r\\n        }\\r\\n        return FilterData.FilterOptionsBean.NOT_INSTALLED.equals(strNormalTab) ? 4 : 0;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.gexoty.picolibrary.LibraryExtensions\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 8172
+      },
+      "class_name": "com.gexoty.picolibrary.LibraryExtensions",
+      "method": {
+        "name": "categoryIndex",
+        "reported_signature": "categoryIndex(java.lang.String): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)I"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static int categoryIndex(String str) {\r\n        String strNormalTab = normalTab(str);\r\n        if (FilterData.FilterOptionsBean.APP.equals(strNormalTab)) {\r\n            return 1;\r\n        }\r\n        if (FilterData.FilterOptionsBean.GAME.equals(strNormalTab)) {\r\n            return 2;\r\n        }\r\n        if (\"update\".equals(strNormalTab)) {\r\n            return 3;\r\n        }\r\n        return FilterData.FilterOptionsBean.NOT_INSTALLED.equals(strNormalTab) ? 4 : 0;\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+]

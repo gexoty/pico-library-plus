@@ -1,0 +1,99 @@
+{
+  "original_sha256": "e330afb8a59878756163f7cd3a4588f61e7eb338874563b5eebb9bdd9ce1364f",
+  "archive_entries": 1414,
+  "dex": [
+    "classes.dex"
+  ],
+  "native_libraries": [
+    {
+      "path": "lib/arm64-v8a/libEncryptor.so",
+      "bytes": 75744,
+      "sha256": "861a93734ab8d808364b784f961ffa4b77777b9ae73fb5f634c5a94d0f9dc23c",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libRSSupport.so",
+      "bytes": 2184400,
+      "sha256": "602b2ef88bee7f41d448f533e6c314b443bece52f73474251910f5aac6c0dafc",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libalog.so",
+      "bytes": 121208,
+      "sha256": "13cc3a6322b4dd09de37ab6f17c525713e821a7edc899024689c625f4db1ab5b",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libkeva.so",
+      "bytes": 400264,
+      "sha256": "5bf9ccf3ec7e111a71c11a54254bfceca8dc00ae4b472fc1487b5853dd81ca3a",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/librsjni.so",
+      "bytes": 72000,
+      "sha256": "d3f7a396993a6e5fb9019d650b025e549d589290fff866a32e2bacbe18eeb39a",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/librsjni_androidx.so",
+      "bytes": 70176,
+      "sha256": "40f58c03f81b70ee731646c7bb2839ee624297c083a26c07214e2faf9302c8fe",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libsscronet.so",
+      "bytes": 4264328,
+      "sha256": "0c3c2a1aed73ae1976c283d6f92cfcc5347cc5773f852b20c79658281ee4cc33",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libttboringssl.so",
+      "bytes": 341976,
+      "sha256": "0fd379978fcfe0031b1010671b2fbc3e9d3e596f6d6a7ab29e747fae3b1c4837",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libttcrypto.so",
+      "bytes": 1170688,
+      "sha256": "4b5efc4900f25a966bbd9ee6d554f0e92638e4ff543fc87bb9cd0846837d28db",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    },
+    {
+      "path": "lib/arm64-v8a/libvibration.so",
+      "bytes": 5968,
+      "sha256": "cdcb8f6c31a00e73ee66458dd02242e1b2dbd633e85310547737af27ac7d992b",
+      "elf_class": 2,
+      "machine": 183,
+      "original_package_literals": 0
+    }
+  ],
+  "jadx_errors_in_files": [
+    "kotlinx\\coroutines\\internal\\f.java",
+    "androidx\\lifecycle\\FlowLiveDataConversions.java",
+    "androidx\\recyclerview\\widget\\GridLayoutManager.java",
+    "androidx\\exifinterface\\media\\ExifInterface.java",
+    "androidx\\constraintlayout\\solver\\ArrayRow.java",
+    "androidx\\constraintlayout\\solver\\widgets\\ConstraintWidget.java",
+    "androidx\\constraintlayout\\solver\\widgets\\Flow.java"
+  ],
+  "smali_classes": 7034
+}

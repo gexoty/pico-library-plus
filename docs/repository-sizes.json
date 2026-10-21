@@ -1,0 +1,28 @@
+{
+  "initial_bytes_including_git": 1765246368,
+  "final_bytes_including_git_evidence_and_artifacts": 172130050,
+  "net_reduction_bytes": 1593116318,
+  "source_files_for_future_git_bytes": 24053197,
+  "original_generated_data_removed_bytes": 1646599817,
+  "final_by_directory": {
+    ".git": 9151430,
+    ".github": 3084,
+    ".gitignore": 235,
+    ".local-evidence": 85781220,
+    "AGENTS.md": 1077,
+    "analysis": 232304,
+    "dist": 53144203,
+    "docs": 87072,
+    "input": 20989606,
+    "magisk": 36071,
+    "NOTICE.md": 1947,
+    "README.md": 4509,
+    "scripts": 35317,
+    "src": 57152,
+    "templates": 470,
+    "tests": 18019,
+    "validation": 2466722,
+    "vendor": 119605,
+    "VERSION": 7
+  }
+}

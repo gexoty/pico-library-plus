@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "versionCode": 201905100,
+  "signing": "android-debug",
+  "certificate_sha256": "84630ca323ffc9f33343354c79d4f7b325957e97bf6e51250ec7cc3d93e51dba",
+  "device_tested": false,
+  "packages": {
+    "standalone": "com.gexoty.picolibrary",
+    "system": "com.pvr.appmanager"
+  },
+  "magisk": "verified",
+  "components": "equal"
+}
