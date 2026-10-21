@@ -23,7 +23,7 @@ jobs:
           python-version: '3.13'
       - name: Install pinned build tools
         run: |
-          sdkmanager 'platforms;android-34' 'build-tools;36.0.0'
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-34' 'build-tools;36.0.0'
           python scripts/fetch-tools.py
       - name: Validate tag and version
         env:
