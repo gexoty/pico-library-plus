@@ -1,2 +1,6 @@
 REPLACE="/system/priv-app/AppManager"
 ui_print "Pico Library: systemless AppManager replacement"
+. "$MODPATH/cache-tools.sh"
+backup="/data/adb/picolibrary-backups/install-$(date +%Y%m%d-%H%M%S)-$$"
+invalidate_appmanager_cache /data/system/package_cache "$backup" || abort "Cannot safely back up AppManager parse cache; installation aborted"
+ui_print "Reboot required. Package cache backups: $backup"

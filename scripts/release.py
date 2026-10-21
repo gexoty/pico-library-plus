@@ -42,7 +42,7 @@ def components(xml):
     # Other authorities differ by application ID; normalize only authority attribute lines.
     return [re.sub(r'com\.(?:gexoty\.picolibrary|pvr\.appmanager)(?=\.)','APPLICATION',x) if 'android:authorities' in x else x for x in result]
 def module_bytes(system,version,code):
-    allowed={'customize.sh','LICENSE','META-INF/com/google/android/update-binary','META-INF/com/google/android/updater-script'}
+    allowed={'customize.sh','cache-tools.sh','uninstall.sh','LICENSE','META-INF/com/google/android/update-binary','META-INF/com/google/android/updater-script'}
     actual={p.relative_to(ROOT/'magisk').as_posix() for p in (ROOT/'magisk').rglob('*') if p.is_file()}
     assert actual == allowed | {'UPSTREAM.md'}, 'Unexpected Magisk source files'
     files={name:(ROOT/'magisk'/name).read_bytes() for name in allowed}
@@ -53,7 +53,7 @@ def pack(system,dest,version,code):
     files=module_bytes(system,version,code)
     with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
         for name,data in sorted(files.items()):
-            info=zipfile.ZipInfo(name,(2020,1,1,0,0,0));info.external_attr=(0o100755 if name.endswith('update-binary') else 0o100644)<<16
+            info=zipfile.ZipInfo(name,(2020,1,1,0,0,0));info.external_attr=(0o100755 if (name.endswith('update-binary') or name.endswith('.sh')) else 0o100644)<<16
             z.writestr(info,data,compress_type=zipfile.ZIP_DEFLATED)
     with zipfile.ZipFile(dest) as z:
         assert z.testzip() is None and len(z.namelist())==len(files) and set(z.namelist())==set(files)
